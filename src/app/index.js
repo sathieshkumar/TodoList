@@ -56,3 +56,5 @@ const taskRouter = require('./Routes/taskRoutes.js').routes(Task);
 app.use('/api', taskRouter);
 
 app.listen(PORT, () => console.log('listening on port 3500'));
+
+module.exports = app;

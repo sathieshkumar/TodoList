@@ -15,10 +15,12 @@ module.exports = {
         if (err) {
           res.status(HttpStatus.INTERNAL_SERVER_ERROR)
             .send(err);
-        } else if (task) {
+        }
+        else if (task) {
           req.task = task;
           next();
-        } else {
+        }
+        else {
           res.status(HttpStatus.BAD_REQUEST)
             .send('no task found');
         }

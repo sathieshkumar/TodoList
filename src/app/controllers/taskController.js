@@ -257,8 +257,8 @@ const taskController = (Task) => {
 
    /**
 	 * @swagger
-	 * /api/tasks/{taskId}:
-	 *   delete:
+	 * /api/tasksdone:
+	 *   get:
 	 *     description: Removes a task with given taskId from the TODO list
 	 *     tags: ['ToDo List']
 	 *     produces:
@@ -278,7 +278,7 @@ const taskController = (Task) => {
 	const getDoneTasks = async (req, res) => {
 		try {
 			let doneTasks = await Task.find({ done: true });
-			if (doneTasks.lenth > 0) {
+			if (doneTasks.length > 0) {
 				res.status(HttpStatus.OK).json(doneTasks);
 			}
 			else {
