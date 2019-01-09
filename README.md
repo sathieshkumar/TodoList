@@ -16,3 +16,18 @@ APIs to perform basic operations for a todo list.
 ### DELETE:
 * /api/tasks/{taskId} - Removes a task with given taskId from the TODO list
 
+## Packages Used
+* Express
+* Mongoose
+* SuperTest
+* Swagger-ui-express
+* Istanbul
+* Http-status-code
+* Should
+* chai
+* body-parser
+
+## API documentation
+API Docs can be accessed at http://localhost:3500/api-docs/ after the server is started
+
+
