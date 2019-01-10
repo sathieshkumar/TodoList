@@ -21,7 +21,7 @@ APIs to perform basic operations for a todo list.
 * Mongoose
 * SuperTest
 * Swagger-ui-express
-* Istanbul
+* nyc
 * Http-status-code
 * Should
 * chai
