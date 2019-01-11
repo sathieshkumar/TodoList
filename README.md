@@ -31,7 +31,7 @@ APIs to perform basic operations for a todo list.
 API Docs can be accessed at http://localhost:3500/api-docs/ after the server is started
 
 ## Test and Coverage
-
+```
  todolist@1.0.0 test C:\Users\msathiesh\Desktop\TodoList                                                                                                                                              
  set ENV=test&& mocha ./src/test/*.js                                                                                                                                                                                                                                                                                                          
 (node:19740) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
@@ -71,3 +71,4 @@ All files            |    87.61 |    61.54 |    90.48 |    88.29 |              
  app/models          |      100 |      100 |      100 |      100 |                   |
   taskModel.js       |      100 |      100 |      100 |      100 |                   |
 ---------------------|----------|----------|----------|----------|-------------------| 
+```
