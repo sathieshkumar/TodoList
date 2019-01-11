@@ -32,8 +32,8 @@ API Docs can be accessed at http://localhost:3500/api-docs/ after the server is 
 
 ## Test and Coverage
 
-> todolist@1.0.0 test C:\Users\msathiesh\Desktop\TodoList                                                                                                                                              
-> set ENV=test&& mocha ./src/test/*.js                                                                                                                                                                                                                                                                                                          
+ todolist@1.0.0 test C:\Users\msathiesh\Desktop\TodoList                                                                                                                                              
+ set ENV=test&& mocha ./src/test/*.js                                                                                                                                                                                                                                                                                                          
 (node:19740) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
   Task Controller Unit Test                                                                                                                                                                            
     Post                                                                                                                                                                                               
@@ -55,4 +55,19 @@ API Docs can be accessed at http://localhost:3500/api-docs/ after the server is 
     √ Should get all the done tasks                                                                                                                                                                    
     √ Should respond with NO_CONTENT if there are no done tasks                                                                                                                                        
                                                               
-  13 passing (3s)                                                                                                                                                                                      
+  13 passing (3s)    
+  
+  ---------------------|----------|----------|----------|----------|-------------------|
+File                 |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+---------------------|----------|----------|----------|----------|-------------------|
+All files            |    87.61 |    61.54 |    90.48 |    88.29 |                   |
+ app                 |    86.11 |       50 |       50 |    85.71 |                   |
+  appConfig.js       |    71.43 |       50 |      100 |    71.43 |               8,9 |
+  index.js           |    89.66 |      100 |       50 |    89.29 |          43,44,48 |
+ app/api/Routes      |    94.12 |       75 |      100 |    94.12 |                   |
+  taskRoutes.js      |    94.12 |       75 |      100 |    94.12 |                24 |
+ app/api/controllers |    85.96 |     62.5 |      100 |     87.5 |                   |
+  taskController.js  |    85.96 |     62.5 |      100 |     87.5 |... 63,213,244,285 |
+ app/models          |      100 |      100 |      100 |      100 |                   |
+  taskModel.js       |      100 |      100 |      100 |      100 |                   |
+---------------------|----------|----------|----------|----------|-------------------|
